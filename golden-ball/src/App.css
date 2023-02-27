@@ -1,0 +1,58 @@
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.app-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  height: 50px;
+  pointer-events: none;
+  margin: 0 12px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-container {
+  border: 1px solid black;
+  position: absolute;
+  padding: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fade-in { 
+  animation: fadeIn 1s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
